@@ -14,5 +14,5 @@ sed -i 's/[^0-9]//g' oclcnums.tmp
 sort oclcnums.tmp | uniq | grep -v '^$' | grep -vP '^[0-1]0?$' > feddoc_oclc_nums.txt
 
 git commit feddoc_oclc_nums.txt -m 'OCLC update'
-git commit --amend --author="Josh Steverman <jstever@umich.edu>"
+git commit --amend --author="Josh Steverman <jstever@umich.edu>" --no-edit
 git push
