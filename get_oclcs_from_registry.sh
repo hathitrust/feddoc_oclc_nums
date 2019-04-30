@@ -2,7 +2,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 # export from the registry collection
-mongoexport --quiet -d htgd -c registry -q '{deprecated_timestamp:{$exists:0}}' -f oclcnum_t --csv -o oclcnums.tmp
+mongoexport --quiet -d htgd -c registry -q '{deprecated_timestamp:{$exists:0}}' -f oclc --csv -o oclcnums.tmp
 
 # split lines with multiple oclcs
 sed -i 's/,/\n/g' oclcnums.tmp
