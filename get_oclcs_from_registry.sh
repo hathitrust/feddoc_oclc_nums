@@ -28,5 +28,5 @@ sort oclcnums_raw.tmp | uniq | grep -v '^$' | grep -v 'numberLong' | grep -v 'oc
 
 
 
-git commit feddoc_oclc_nums.txt feddoc_oclc_nums_raw.txt -m 'OCLC update' --author="Josh Steverman <jstever@umich.edu>"
+git commit feddoc_oclc_nums.txt feddoc_oclc_nums_raw.txt -m 'OCLC update' --author="HathiTrust System <hathitrust-system@umich.edu>"
 git push
